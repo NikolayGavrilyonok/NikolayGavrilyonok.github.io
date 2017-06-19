@@ -1,0 +1,53 @@
+.aside-menu-catalog,
+.aside-menu-price,
+.aside-menu-metal,
+.aside-menu-insert,
+.aside-menu-offer {
+    font-size: 16pt;
+    display: none;
+    padding: 0 0 0 0;
+    list-style: none;
+    margin: 0;
+}
+
+/*aside-menu list buttons*/
+    
+input#aside-menu-button-catalog:checked~.aside-menu>.aside-menu-catalog,
+input#aside-menu-button-price:checked~.aside-menu>.aside-menu-price,
+input#aside-menu-button-metal:checked~.aside-menu>.aside-menu-metal,
+input#aside-menu-button-insert:checked~.aside-menu>.aside-menu-insert,
+input#aside-menu-button-offer:checked~.aside-menu>.aside-menu-offer {
+    display: block;
+}
+
+/*aside-menu list buttons arrows*/
+
+input#aside-menu-button-catalog:checked~.aside-menu>label:nth-of-type(1)>span,
+input#aside-menu-button-price:checked~.aside-menu>label:nth-of-type(2)>span,
+input#aside-menu-button-metal:checked~.aside-menu>label:nth-of-type(3)>span,
+input#aside-menu-button-insert:checked~.aside-menu>label:nth-of-type(4)>span,
+input#aside-menu-button-offer:checked~.aside-menu>label:nth-of-type(5)>span {
+    transform: rotate(90deg);
+    transform-origin: 6px 15px;
+    transition: .2s;
+}
+
+/*checkbox imitation*/
+
+input#price-less-than-100:not(:checked)~.aside-menu>.aside-menu-price>li:nth-of-type(1)>.checkbox-checked,
+input#price-101-300:not(:checked)~.aside-menu>.aside-menu-price>li:nth-of-type(2)>.checkbox-checked,
+input#price-301-500:not(:checked)~.aside-menu>.aside-menu-price>li:nth-of-type(3)>.checkbox-checked,
+input#price-more-than-500:not(:checked)~.aside-menu>.aside-menu-price>li:nth-of-type(4)>.checkbox-checked,
+input#metal-platinum:not(:checked)~.aside-menu>.aside-menu-metal>li:nth-of-type(1)>.checkbox-checked,
+input#metal-gold:not(:checked)~.aside-menu>.aside-menu-metal>li:nth-of-type(2)>.checkbox-checked,
+input#metal-silver:not(:checked)~.aside-menu>.aside-menu-metal>li:nth-of-type(3)>.checkbox-checked,
+input#insert-diamond:not(:checked)~.aside-menu>.aside-menu-insert>li:nth-of-type(1)>.checkbox-checked,
+input#insert-emerald:not(:checked)~.aside-menu>.aside-menu-insert>li:nth-of-type(2)>.checkbox-checked,
+input#insert-sapphire:not(:checked)~.aside-menu>.aside-menu-insert>li:nth-of-type(3)>.checkbox-checked,
+input#insert-none:not(:checked)~.aside-menu>.aside-menu-insert>li:nth-of-type(4)>.checkbox-checked,
+input#offer-new:not(:checked)~.aside-menu>.aside-menu-offer>li:nth-of-type(1)>.checkbox-checked,
+input#offer-sale:not(:checked)~.aside-menu>.aside-menu-offer>li:nth-of-type(2)>.checkbox-checked,
+input#offer-hits:not(:checked)~.aside-menu>.aside-menu-offer>li:nth-of-type(3)>.checkbox-checked {
+    opacity: 0;
+    transition: ease-in .2s;
+}

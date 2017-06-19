@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Diamond. Главная</title>
+        <link href="assets/css/jquery_slider.css" rel="stylesheet" type="text/css">
+        <script src="assets/js/jquery-1.7.2.min.js"></script>
+        
+        
+        <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet"><!--font-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!--iconic font-->
+        <link href="assets/css/style-common.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+<!--header-->
+        <div class="header">
+<!--header-humburger-button-->
+            <input class="hidden-menu-ticker" type="checkbox" id="hmt">
+            <label class="btn-menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+<!--header-menu-wrapper-->
+            <div class="header-menu-wrapper">
+<!--header-logo-->
+                <a class="header-logo" href="index.html">
+                    <img src="assets/img/logo.jpg">
+                </a>
+<!--header-menu-->
+                <ul class="header-menu">
+                    <li><a href="about.html">О компании</a></li>
+                    <input type="checkbox" id="header-menu-catalog-checkbox">
+<!--header-menu-catalog-->
+                    <li class="header-menu-catalog">
+                        <label for="header-menu-catalog-checkbox">Каталог</label>
+                        <ul class="header-menu-catalog-options">
+                            <li><a href="error-page.html">Браслеты</a></li>
+                            <li><a href="error-page.html">Колье</a></li>
+                            <li><a href="rings.html">Кольца</a></li>
+                            <li><a href="error-page.html">Серьги</a></li>
+                            <li><a href="error-page.html">Цепи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="error-page.html">Акции</a></li>
+                    <li><a href="error-page.html">Сервисы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+<!--home-page-wrapper-->
+        <div class="home-page-wrapper">
+<!--slider-->
+            <div class="home-slider">
+                <div id="slider-wrap">
+        	        <div id="slider">
+                		<div class="slide"><img src="assets/img/slider/slider01.jpg" width="100%"></div>
+                		<div class="slide"><img src="assets/img/slider/slider02.jpg" width="100%"></div>
+                		<div class="slide"><img src="assets/img/slider/slider03.jpg" width="100%"></div>
+                		<div class="slide"><img src="assets/img/slider/slider04.jpg" width="100%"></div>
+        	        </div>
+                </div>
+                <script>
+                    (function ($) {
+        			var hwSlideSpeed = 700;
+        			var hwTimeOut = 3000;
+        			var hwNeedLinks = true;
+        
+        			$(document).ready(function(e) {
+        					$('.slide').css(
+        							{"position" : "absolute",
+        							"top":'0', "left": '0'}).hide().eq(0).show();
+        					var slideNum = 0;
+        					var slideTime;
+        					slideCount = $("#slider .slide").size();
+        					var animSlide = function(arrow){
+        							clearTimeout(slideTime);
+        							$('.slide').eq(slideNum).fadeOut(hwSlideSpeed);
+        							if(arrow == "next"){
+        									if(slideNum == (slideCount-1)){slideNum=0;}
+        									else{slideNum++;}
+        									}
+        							else if(arrow == "prew")
+        							{
+        								if(slideNum == 0){slideNum=slideCount-1;}
+        								else{slideNum-=1;}
+        							}
+        							else{
+        								slideNum = arrow;
+        								}
+        							$('.slide').eq(slideNum).fadeIn(hwSlideSpeed, rotator);
+        							$(".control-slide.active").removeClass("active");
+        							$('.control-slide').eq(slideNum).addClass('active');
+        							};
+        			if(hwNeedLinks){
+        			var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>')
+        				.prependTo('#slider');		
+        				$('#nextbutton').click(function(){
+        					animSlide("next");
+        					return false;
+        					});
+        				$('#prewbutton').click(function(){
+        					animSlide("prew");
+        					return false;
+        					});
+        			}
+        				var $adderSpan = '';
+        				$('.slide').each(function(index) {
+        						$adderSpan += '<span class = "control-slide">' + index + '</span>';
+        					});
+        				$('<div class ="sli-links">' + $adderSpan +'</div>').appendTo('#slider-wrap');
+        				$(".control-slide:first").addClass("active");
+        				$('.control-slide').click(function(){
+        				var goToNum = parseFloat($(this).text());
+        				animSlide(goToNum);
+        				});
+        				var pause = false;
+        				var rotator = function(){
+        						if(!pause){slideTime = setTimeout(function(){animSlide('next');}, hwTimeOut);}
+        						};
+        				$('#slider-wrap').hover(	
+        					function(){clearTimeout(slideTime); pause = true;},
+        					function(){pause = false; rotator();
+        					});
+        				rotator();
+        			});
+        			})(jQuery);
+                </script>
+            </div>
+<!--info-block-->
+            <div class="info-block">
+                <div class="info-flex-container">
+                    <a class="info-block-link link_1" href="rings.html"></a>
+                    <a class="info-block-link link_2" href="error-page.html"></a>
+                    <img src="assets/img/info-block/flex1.jpg" height="45%">
+                    <img src="assets/img/info-block/flex3.jpg" height="45%">
+                </div>
+                <div class="info-flex-container">
+                    <a class="info-block-link link_3" href="error-page.html"></a>
+                    <img src="assets/img/info-block/flex2.jpg" width="45%">
+                    <div class="sub-flex-container">
+                        <a class="info-block-link link_4" href="error-page.html"></a>
+                        <a class="info-block-link link_5" href="error-page.html"></a>
+                        <img src="assets/img/info-block/flex6.jpg" width="95%" height="45%">
+                        <img src="assets/img/info-block/flex5.jpg" width="95%" height="45%">
+                        
+                    </div>
+                </div>
+                <div class="info-flex-container">
+                    <a class="info-block-link link_6" href=""></a>
+                    <a class="info-block-link link_7" href=""></a>
+                    <img src="assets/img/info-block/flex4.jpg" width="45%" height="95%">
+                    <img src="assets/img/info-block/flex7.jpg" width="45%" height="95%">
+                </div>
+            </div>
+<!--new-block-->
+            <div class="new-block">
+                <span>Долгожданные революционные новинки</span>
+                <div class="new-block__item-wrapper">
+                    <div class="new-block__item-name">Кольцо</div>
+                    <div class="new-block__item-article">Арт. 62539210/А-01</div>
+                    <img src="assets/img/rings/ring-gold-diamond07.jpg" width="100%">
+                    <a href="rings.html.html"></a>
+                </div>
+                <div class="new-block__item-wrapper">
+                    <div class="new-block__item-name">Кольцо</div>
+                    <div class="new-block__item-article">Арт. 12987314/А-62</div>
+                    <img src="assets/img/rings/ring-gold-diamond09.jpg" width="100%">
+                    <a href="rings.html.html"></a>
+                </div>
+                <div class="new-block__item-wrapper">
+                    <div class="new-block__item-name">Серьги</div>
+                    <div class="new-block__item-article">Арт. 32903874/B-14</div>
+                    <img src="assets/img/earrings/erring-gold-diamond07.jpg" width="100%">
+                    <a href="error-page.html"></a>
+                </div>
+                <div class="new-block__item-wrapper">
+                    <div class="new-block__item-name">Серьги</div>
+                    <div class="new-block__item-article">Арт. 25947126/B-06</div>
+                    <img src="assets/img/earrings/erring-gold07.jpg" width="100%">
+                    <a href="error-page.html"></a>
+                </div>
+                <div class="new-block__item-wrapper">
+                    <div class="new-block__item-name">Кольцо</div>
+                    <div class="new-block__item-article">Арт. 63289475/А-32</div>
+                    <img src="assets/img/rings/ring-gold-diamond10.jpg" width="100%">
+                    <a href="rings.html.html"></a>
+                </div>
+            </div>
+<!--hits-block-->
+            <div class="hits-block">
+                <span>Лидеры продаж</span>
+                <div class="hits-block__item-wrapper">
+                    <div class="hits-block__item-name">Кольцо</div>
+                    <div class="hits-block__item-article">Арт. 12903874/А-92</div>
+                    <img src="assets/img/rings/ring-gold-diamond01.jpg" width="100%">
+                    <a href="rings.html.html"></a>
+                </div>
+                <div class="hits-block__item-wrapper">
+                    <div class="hits-block__item-name">Кольцо</div>
+                    <div class="hits-block__item-article">Арт. 34952169/А-34</div>
+                    <img src="assets/img/earrings/erring-gold05.jpg" width="100%">
+                    <a href="error-page.html"></a>
+                </div>
+                <div class="hits-block__item-wrapper">
+                    <div class="hits-block__item-name">Кольцо</div>
+                    <div class="hits-block__item-article">Арт. 71958632/B-57</div>
+                    <img src="assets/img/rings/ring-gold-diamond04.jpg" width="100%">
+                    <a href="rings.html.html"></a>
+                </div>
+                <div class="hits-block__item-wrapper">
+                    <div class="hits-block__item-name">Кольцо</div>
+                    <div class="hits-block__item-article">Арт. 27815698/А-82</div>
+                    <img src="assets/img/rings/ring-gold-diamond08.jpg" width="100%">
+                    <a href="rings.html.html"></a>
+                </div>
+                <div class="hits-block__item-wrapper">
+                    <div class="hits-block__item-name">Кольцо</div>
+                    <div class="hits-block__item-article">Арт. 61845963/B-15</div>
+                    <img src="assets/img/earrings/erring-gold-diamond05.jpg" width="100%">
+                    <a href="error-page.html"></a>
+                </div>
+            </div>
+        </div>
+<!--footer-->
+        <div class="footer">
+<!--footer-wrapper-->
+            <div class="footer-menu-wrapper">
+                <!--footer-buttons-->
+                <input type="checkbox" id="footer-about-button">
+                <input type="checkbox" id="footer-services-button">
+                <input type="checkbox" id="footer-catalog-button">
+                <input type="checkbox" id="footer-social-button">
+<!--footer-logo-->
+                <div class="footer-logo">
+                    <div class="footer-logo-area"><a href="index.html"><img src="assets/img/logo.jpg"></a></div>
+                    <a href="contacts.html">Контакты</a>
+                    <ul>
+                        <li class="footer-text">+375 17 233 16 20</li>
+                        <li class="footer-text">+375 29 655 82 90</li>
+                        <li class="footer-text">+375 29 717 20 36</li>
+                    </ul>
+                </div>
+<!--footer-about-->
+                <div class="footer-about">
+                    <label for="footer-about-button">О компании</label>
+                    <ul class="to-hide-list">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="error-page.html">Вакансии</a></li>
+                        <li><a href="error-page.html">Карта сайта</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="error-page.html">Новости</a></li>
+                    </ul>
+                </div>
+<!--footer-services-->
+                <div class="footer-services">
+                    <label for="footer-services-button">Сервисы</label>
+                    <ul class="to-hide-list">
+                        <li><a href="error-page.html">Доставка</a></li>
+                        <li><a href="error-page.html">Гарантия</a></li>
+                        <li><a href="error-page.html">Мастерская</a></li>
+                        <li><a href="error-page.html">Рассрочка</a></li>
+                    </ul>
+                </div>
+<!--footer-catalog-->
+                <div class="footer-catalog">
+                    <label for="footer-catalog-button">Каталог</label>
+                    <ul class="to-hide-list">
+                        <li><a href="error-page.html">Браслеты</a></li>
+                        <li><a href="error-page.html">Колье</a></li>
+                        <li><a href="rings.html">Кольца</a></li>
+                        <li><a href="error-page.html">Серьги</a></li>
+                        <li><a href="error-page.html">Цепи</a></li>
+                        <li><a href="error-page.html">Распродажи</a></li>
+                        <li><a href="error-page.html">Хиты продаж</a></li>
+                    </ul>
+                </div>
+<!--footer-social-->
+                <div class="footer-social">
+                    <label for="footer-social-button">Мы в социальных сетях</label>
+                    <ul class="to-hide-list">
+                        <li><a href="error-page.html"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-odnoklassniki-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-vk"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
