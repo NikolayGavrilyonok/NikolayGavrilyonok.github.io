@@ -1,0 +1,304 @@
+                                        /* M E D I A (max-width: 850px) */
+@media screen and (max-width: 850px) {
+    .home-page-wrapper {
+        margin: 60px 0;
+    }
+    .home-slider {
+        display: none;
+    }
+    .sub-flex-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;;
+        justify-content: space-around;
+    }
+/*info-block links*/
+    .link_1 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_2 {
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_3 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .link_4 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_5 {
+        top: 50%;
+        right: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_6 {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .link_7 {
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+    }
+/*new-block*/
+    .new-block {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .new-block__item-wrapper {
+        position: relative;
+        width: 150px;
+    }
+    .new-block__item-name {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top:0;
+        font-size: 14pt;
+        transition: .5s;
+    }
+    .new-block__item-article {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        font-size: 10pt;
+        transition: .5s;
+    }
+/*hits-block*/
+    .hits-block {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .hits-block__item-wrapper {
+        position: relative;
+        width: 150px;
+    }
+/*new-block, hits-block links*/
+    .new-block a,
+    .hits-block a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+                                        /* M E D I A (min-width: 851px) */
+@media screen and (min-width: 851px) {
+    .home-slider {
+        position: relative;
+        margin: 120px auto 0 auto;
+        width: 95vw;
+    }
+/*flex-container*/
+    .info-flex-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;
+        justify-content: space-around;
+        width: 95%;
+    }
+    .sub-flex-container {
+        width: 45%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;;
+        justify-content: space-around;
+    }
+/*links*/
+    .link_1 {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_2 {
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_3 {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .link_4 {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_5 {
+        top: 50%;
+        right: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .link_6 {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+    }
+    .link_7 {
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+    }
+/*new-block*/
+.new-block {
+    margin: 50px auto;
+    height: 250px;
+    width: 85%;
+}
+.new-block__item-wrapper {
+    position: relative;
+    width: 18%;
+    transition: .5s;
+}
+.new-block__item-wrapper:hover>.new-block__item-name {
+    color: #5fa657;
+    transform: translate(0, -5px);
+}
+.new-block__item-wrapper:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+/*hits-block*/
+.hits-block {
+    margin: 50px auto;
+    height: 250px;
+    width: 85%;
+}
+.hits-block__item-wrapper {
+    position: relative;
+    width: 18%;
+    transition: .5s;
+}
+.hits-block__item-wrapper:hover>.hits-block__item-name {
+    color: #5fa657;
+    transform: translate(0, -5px);
+}
+.hits-block__item-wrapper:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+}
+
+                                        /* C O M M O N */
+.info-block {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: space-around;
+        align-content: center;
+        justify-content: space-around;
+    }
+.info-flex-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;
+        justify-content: space-around;
+        width: 100%;
+    }
+/*links*/
+    .info-block-link {
+        position: absolute;
+        display: block;
+        transform: scale(0.95);
+    }
+/*new-block*/
+.new-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.new-block span {
+    color: #504b45;
+    width: 100%;
+    font-size: 22pt;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: solid 1px #504b45;
+}
+.new-block__item-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:0;
+    font-size: 14pt;
+    transition: .5s;
+}
+.new-block__item-article {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 10pt;
+    transition: .5s;
+}
+/*hits-block*/
+.hits-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.hits-block span {
+    color: #504b45;
+    width: 100%;
+    font-size: 22pt;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: solid 1px #504b45;
+}
+.hits-block__item-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:0;
+    font-size: 14pt;
+    transition: .5s;
+}
+.hits-block__item-article {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 10pt;
+    transition: .5s;
+}

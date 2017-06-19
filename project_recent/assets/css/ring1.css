@@ -1,0 +1,6 @@
+@media screen and (max-width: 850px) {
+/*recent*/
+    .aside-menu>label:nth-of-type(1):after {
+        content: " обручальные";
+    }
+}

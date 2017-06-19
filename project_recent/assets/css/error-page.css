@@ -1,0 +1,88 @@
+                                        /* M E D I A (max-width: 850px) */
+@media screen and (max-width: 850px) {
+    .error-page-content-wrapper {
+        margin: 50px 0 0 0;
+    }
+/*feedback-wrapper*/
+    .feedback-area>p {
+        margin: 0 5px 15px 5px;
+    }
+    .feedback-wrapper textarea {
+        width: 60%;
+    }
+}
+                                        /* M E D I A (min-width: 851px) */
+@media screen and (min-width: 851px) {
+    .error-page-content-wrapper {
+        margin: 200px auto 0 auto;
+        max-width: 1210px;
+    }
+/*feedback-wrapper*/
+    .feedback-wrapper label {
+        margin: auto;
+        width: 60%;
+    }
+    .feedback-wrapper textarea {
+        min-height: 100px;
+        width: 40%;
+    }
+}
+                                        /* C O M M O N*/
+.feedback-wrapper label {
+        display: block;
+    }
+.feedback-wrapper p {
+        color: #393631;
+        font-size: 16pt;
+        text-align: center;
+    }
+.feedback-wrapper span {
+    font-size: 14pt;
+    display: inline-block;
+    width: 120px;
+    margin: 5px 0 5px 0;
+    color: #b07f66;
+}
+.feedback-wrapper {
+    width: 100%;
+}
+.feedback-wrapper input {
+        display: inline-block;
+        width: calc(100% - 130px);
+        margin: 5px 0 5px 0;
+    }
+.feedback-wrapper button {
+    display : block;
+    margin: 15px auto;
+    color: #393631;
+    background-color: #f2f1ef;
+    border: solid 1px #deddd8;
+    border-radius: 3px;
+    font-size: 13pt;
+    font-family: 'El Messiri', sans-serif;
+}
+.feedback-wrapper button:hover {
+    color: #c36b3d;
+}
+.feedback-wrapper textarea {
+        display: block;
+        margin: -30px auto 0 auto;
+    }
+.error-page-content-wrapper {
+    position: relative;
+}
+.error-page-text-area p {
+    color: #393631;
+    font-size: 18pt;
+    width: 100%;
+    text-align: center;
+}
+.error-page-text-area a {
+    text-decoration: none;
+    color: #393631;
+    font-weight: bold;
+    font-size: 16pt;
+}
+.error-page-text-area a:hover {
+    color: #c36b3d;
+}

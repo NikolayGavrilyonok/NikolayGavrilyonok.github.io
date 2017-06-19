@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Diamond. Каталог</title>
+        <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet"><!--font-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><!--iconic font-->
+        <link href="assets/css/style-common.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/catalog-style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/ring1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+<!--header-->
+<!--        <div class="header">-->
+<!--header-humburger-button-->
+<!--            <input class="hidden-menu-ticker" type="checkbox" id="hmt">-->
+<!--            <label class="btn-menu" for="hmt">-->
+<!--                <span class="first"></span>-->
+<!--                <span class="second"></span>-->
+<!--                <span class="third"></span>-->
+<!--            </label>-->
+<!--header-menu-wrapper-->
+<!--            <div class="header-menu-wrapper">-->
+<!--header-logo-->
+<!--                <a class="header-logo" href="index.html">-->
+<!--                    <img src="assets/img/logo.jpg">-->
+<!--                </a>-->
+<!--header-menu-->
+<!--                <ul class="header-menu">-->
+<!--                    <li><a href="about.html">О компании</a></li>-->
+<!--                    <input type="checkbox" id="header-menu-catalog-checkbox">-->
+<!--header-menu-catalog-->
+<!--                    <li class="header-menu-catalog">-->
+<!--                        <label for="header-menu-catalog-checkbox">Каталог</label>-->
+<!--                        <ul class="header-menu-catalog-options">-->
+<!--                            <li><a href="error-page.html">Браслеты</a></li>-->
+<!--                            <li><a href="error-page.html">Колье</a></li>-->
+<!--                            <li><a href="rings.html">Кольца</a></li>-->
+<!--                            <li><a href="earrings.html">Серьги</a></li>-->
+<!--                            <li><a href="error-page.html">Цепи</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li><a href="error-page.html">Акции</a></li>-->
+<!--                    <li><a href="error-page.html">Сервисы</a></li>-->
+<!--                    <li><a href="contacts.html">Контакты</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--header-->
+        <div class="header">
+<!--header-humburger-button-->
+            <input class="hidden-menu-ticker" type="checkbox" id="hmt">
+            <label class="btn-menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+<!--header-menu-wrapper-->
+            <div class="header-menu-wrapper">
+<!--header-logo-->
+                <a class="header-logo" href="index.html">
+                    <img src="assets/img/logo.jpg">
+                </a>
+<!--header-menu-->
+                <ul class="header-menu">
+                    <li><a href="about.html">О компании</a></li>
+                    <input type="checkbox" id="header-menu-catalog-checkbox">
+<!--header-menu-catalog-->
+                    <li class="header-menu-catalog">
+                        <label for="header-menu-catalog-checkbox">Каталог</label>
+                        <ul class="header-menu-catalog-options">
+                            <li class="catalog-rings">
+                                <input type="checkbox" id="rmb">
+                                <label for="rmb">Кольца</label>
+                                <ul class="rings-submenu">
+                                    <li><a href="rings.html">Обручальные</a></li>
+                                    <li><a href="rings2.html">Подарочные</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="error-page.html">Акции</a></li>
+                    <li><a href="error-page.html">Сервисы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+<!--catalog-wrapper-->
+        <div class="catalog-wrapper">
+<!--category-buttons-->
+            <input type="checkbox" id="aside-menu-button-catalog" checked>
+            <input type="checkbox" id="aside-menu-button-price">
+            <input type="checkbox" id="aside-menu-button-metal">
+            <input type="checkbox" id="aside-menu-button-insert">
+            <input type="checkbox" id="aside-menu-button-offer">
+<!--filter-price-->
+            <input class="filter" type="checkbox" id="price-less-than-100" data-for="item-price__less-than-100" data-type="price">
+            <input class="filter" type="checkbox" id="price-101-300" data-for="item-price__101-300" data-type="price">
+            <input class="filter" type="checkbox" id="price-301-500" data-for="item-price__301-500" data-type="price">
+            <input class="filter" type="checkbox" id="price-more-than-500" data-for="item-price__more-than-500" data-type="price">
+<!--filter-metals-->
+            <input class="filter" type="checkbox" id="metal-platinum" data-for="item-metal__platinum" data-type="metal">
+            <input class="filter" type="checkbox" id="metal-gold" data-for="item-metal__gold" data-type="metal">
+            <input class="filter" type="checkbox" id="metal-silver" data-for="item-metal__silver" data-type="metal">
+<!--filter-insert-->
+            <input class="filter" type="checkbox" id="insert-diamond" data-for="item-insert__diamond" data-type="insert">
+            <input class="filter" type="checkbox" id="insert-emerald" data-for="item-insert__emerald" data-type="insert">
+            <input class="filter" type="checkbox" id="insert-sapphire" data-for="item-insert__sapphire" data-type="insert">
+            <input class="filter" type="checkbox" id="insert-none" data-for="item-insert__none" data-type="insert">
+<!--filter-offer-->
+            <input class="filter" type="checkbox" id="offer-new" data-for="item-offer__new" data-type="offer">
+            <input class="filter" type="checkbox" id="offer-sale" data-for="item-offer__sale" data-type="offer">
+            <input class="filter" type="checkbox" id="offer-hits" data-for="item-offer__hits" data-type="offer">
+<!--aside-menu-->
+            <div class="aside-menu">
+                <label for="aside-menu-button-catalog"><span class="fa fa-angle-down"></span>Кольца</label>
+                <ul class="aside-menu-catalog">
+                    <li><a class="aside-menu__current-catalog" href="rings.html">Обручальные</a></li>
+                    <li><a href="ring2.html">Подарочные</a></li>
+                    <!--<li><a href="error-page.html">Браслеты</a></li>-->
+                    <!--<li><a href="error-page.html">Колье</a></li>-->
+                    <!--<li><a class="aside-menu__current-catalog" href="rings.html">Кольца</a></li>-->
+                    <!--<li><a href="earrings.html">Серьги</a></li>-->
+                    <!--<li><a href="error-page.html">Цепи</a></li>-->
+                </ul>
+                <label for="aside-menu-button-price"><span class="fa fa-angle-down"></span>Цена</label>
+                <ul class="aside-menu-price">
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="price-less-than-100">До 100 Br</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="price-101-300">101-300 Br</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="price-301-500">301-500 Br</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="price-more-than-500">Дороже 500 Br</label></li>
+                </ul>
+                <label for="aside-menu-button-metal"><span class="fa fa-angle-down"></span>Металл</label>
+                <ul class="aside-menu-metal">
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="metal-platinum">Платина</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="metal-gold">Золото</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="metal-silver">Серебро</label></li>
+                </ul>
+                <label for="aside-menu-button-insert"><span class="fa fa-angle-down"></span>Вставка</label>
+                <ul class="aside-menu-insert">
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="insert-diamond">Бриллиант</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="insert-emerald">Изумруд</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="insert-sapphire">Сапфир</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="insert-none">Без вставки</label></li>
+                </ul>
+                <label for="aside-menu-button-offer"><span class="fa fa-angle-down"></span>Предложения</label>
+                <ul class="aside-menu-offer">
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="offer-new">Новинки</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="offer-sale">Скидки</label></li>
+                    <li><span>&#x2610;</span><span class="checkbox-checked">&#x2611;</span><label for="offer-hits">Лидеры продаж</label></li>
+                </ul>
+            </div>
+<!--catalog-content-->
+            <div class="catalog-content">
+<!--path-indicator-->
+                <div class="path-indicator">
+                    <a href="index.html">Главная</a>
+                    <span>&rsaquo;</span>
+                    <a href="rings.html"><sapn>Обручальные кольца</sapn></a>
+                </div>
+<!--gold-diamond-->
+                <!--<div class="catalog-item-wrapper item-price__101-300 item-metal__gold item-insert__diamond item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-1">-->
+                <!--    <label class="item-info" for="mib-1"></label>-->
+                <!--    <div class="item-sale">Скидка: 40%</div>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">250 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond01.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__101-300 item-metal__gold item-insert__diamond item-offer__sale">
+                    <input type="checkbox" id="mib-2">
+                    <label class="item-info" for="mib-2"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">145 Br</div>
+                    <div class="item-sale">Скидка: 35%</div>
+                    <img src="assets/img/rings/ring-gold-diamond02.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__101-300 item-metal__gold item-insert__diamond item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-3">-->
+                <!--    <label class="item-info" for="mib-3"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">280 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 15%</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond03.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__diamond item-offer__hits">
+                    <input type="checkbox" id="mib-4">
+                    <label class="item-info" for="mib-4"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">420 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold-diamond04.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__diamond item-offer__hits">-->
+                <!--    <input type="checkbox" id="mib-5">-->
+                <!--    <label class="item-info" for="mib-5"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">495 Br</div>-->
+                <!--    <div class="item-offer">Лидер продаж!</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond05.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__diamond item-offer__hits">
+                    <input type="checkbox" id="mib-6">
+                    <label class="item-info" for="mib-6"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">410 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold-diamond06.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-7">-->
+                <!--    <label class="item-info" for="mib-7"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">720 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond07.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond item-offer__new">
+                    <input type="checkbox" id="mib-8">
+                    <label class="item-info" for="mib-8"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">990 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-gold-diamond08.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-9">-->
+                <!--    <label class="item-info" for="mib-9"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">870 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond09.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond item-offer__new">
+                    <input type="checkbox" id="mib-10">
+                    <label class="item-info" for="mib-10"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">1050 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-gold-diamond10.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond">-->
+                <!--    <input type="checkbox" id="mib-11">-->
+                <!--    <label class="item-info" for="mib-11"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">1250 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond11.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond">
+                    <input type="checkbox" id="mib-12">
+                    <label class="item-info" for="mib-12"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">1100 Br</div>
+                    <img src="assets/img/rings/ring-gold-diamond12.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__diamond">-->
+                <!--    <input type="checkbox" id="mib-13">-->
+                <!--    <label class="item-info" for="mib-13"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">1310 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-diamond13.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+<!--gold-emerald-->
+                <!--<div class="catalog-item-wrapper item-price__101-300 item-metal__gold item-insert__emerald item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-14">-->
+                <!--    <label class="item-info" for="mib-14"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">290 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 25%</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-emerald01.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Изумруд</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__101-300 item-metal__gold item-insert__emerald item-offer__hits">
+                    <input type="checkbox" id="mib-15">
+                    <label class="item-info" for="mib-15"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">250 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold-emerald02.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Изумруд</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__emerald">-->
+                <!--    <input type="checkbox" id="mib-16">-->
+                <!--    <label class="item-info" for="mib-16"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">470 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-emerald03.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Изумруд</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__emerald item-offer__new">
+                    <input type="checkbox" id="mib-17">
+                    <label class="item-info" for="mib-17"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">1250 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-gold-emerald04.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Изумруд</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+<!--gold-sapphire-->
+                <!--<div class="catalog-item-wrapper item-price__100-300 item-metal__gold item-insert__sapphire item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-18">-->
+                <!--    <label class="item-info" for="mib-18"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">290 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 55%</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-sapphire01.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Сапфир</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__100-300 item-metal__gold item-insert__sapphire item-offer__sale">
+                    <input type="checkbox" id="mib-19">
+                    <label class="item-info" for="mib-19"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">295 Br</div>
+                    <div class="item-sale">Скидка: 30%</div>
+                    <img src="assets/img/rings/ring-gold-sapphire02.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Сапфир</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__100-300 item-metal__gold item-insert__sapphire item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-20">-->
+                <!--    <label class="item-info" for="mib-20"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">280 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 45%</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-sapphire03.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Сапфир</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__sapphire item-offer__hits">
+                    <input type="checkbox" id="mib-21">
+                    <label class="item-info" for="mib-21"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">470 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold-sapphire04.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Сапфир</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__sapphire item-offer__hits">-->
+                <!--    <input type="checkbox" id="mib-22">-->
+                <!--    <label class="item-info" for="mib-22"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">390 Br</div>-->
+                <!--    <div class="item-offer">Лидер продаж!</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-sapphire05.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Сапфир</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__sapphire item-offer__hits">
+                    <input type="checkbox" id="mib-23">
+                    <label class="item-info" for="mib-23"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">475 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold-sapphire06.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Сапфир</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__sapphire item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-24">-->
+                <!--    <label class="item-info" for="mib-24"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">790 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-sapphire07.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Сапфир</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__sapphire item-offer__new">
+                    <input type="checkbox" id="mib-25">
+                    <label class="item-info" for="mib-25"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">1200 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-gold-sapphire08.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Сапфир</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__sapphire">-->
+                <!--    <input type="checkbox" id="mib-26">-->
+                <!--    <label class="item-info" for="mib-26"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">975 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-gold-sapphire09.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Сапфир</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+<!--gold-->
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__gold item-insert__none item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-27">-->
+                <!--    <label class="item-info" for="mib-27"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">95 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 65%</div>-->
+                <!--    <img src="assets/img/rings/ring-gold01.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__gold item-insert__none item-offer__sale">
+                    <input type="checkbox" id="mib-28">
+                    <label class="item-info" for="mib-28"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">85 Br</div>
+                    <div class="item-sale">Скидка: 40%</div>
+                    <img src="assets/img/rings/ring-gold02.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__gold item-insert__none item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-29">-->
+                <!--    <label class="item-info" for="mib-29"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">90 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 20%</div>-->
+                <!--    <img src="assets/img/rings/ring-gold03.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__none item-offer__hits">
+                    <input type="checkbox" id="mib-30">
+                    <label class="item-info" for="mib-30"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">450 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold04.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__none item-offer__hits">-->
+                <!--    <input type="checkbox" id="mib-31">-->
+                <!--    <label class="item-info" for="mib-31"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">320 Br</div>-->
+                <!--    <div class="item-offer">Лидер продаж!</div>-->
+                <!--    <img src="assets/img/rings/ring-gold05.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__301-500 item-metal__gold item-insert__none item-offer__hits">
+                    <input type="checkbox" id="mib-32">
+                    <label class="item-info" for="mib-32"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">470 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-gold06.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__none item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-33">-->
+                <!--    <label class="item-info" for="mib-33"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">570 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-gold07.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__none item-offer__new">
+                    <input type="checkbox" id="mib-34">
+                    <label class="item-info" for="mib-34"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">620 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-gold08.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__none">-->
+                <!--    <input type="checkbox" id="mib-35">-->
+                <!--    <label class="item-info" for="mib-35"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">600 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-gold09.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Золото 585</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__more-than-500 item-metal__gold item-insert__none">
+                    <input type="checkbox" id="mib-36">
+                    <label class="item-info" for="mib-36"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">550 Br</div>
+                    <img src="assets/img/rings/ring-gold10.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Золото 585</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+<!--silver-diamond-->
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-37">-->
+                <!--    <label class="item-info" for="mib-37"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">55 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 10%</div>-->
+                <!--    <img src="assets/img/rings/ring-silver-diamond01.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__sale">
+                    <input type="checkbox" id="mib-38">
+                    <label class="item-info" for="mib-38"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">45 Br</div>
+                    <div class="item-sale">Скидка: 30%</div>
+                    <img src="assets/img/rings/ring-silver-diamond02.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-39">-->
+                <!--    <label class="item-info" for="mib-39"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">60 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 20%</div>-->
+                <!--    <img src="assets/img/rings/ring-silver-diamond03.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__new">
+                    <input type="checkbox" id="mib-40">
+                    <label class="item-info" for="mib-40"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">60 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-silver-diamond04.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-41">-->
+                <!--    <label class="item-info" for="mib-41"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">55 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-silver-diamond05.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-42">-->
+                <!--    <label class="item-info" for="mib-42"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">60 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-silver-diamond06.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__new">
+                    <input type="checkbox" id="mib-43">
+                    <label class="item-info" for="mib-43"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">35 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-silver-diamond07.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__hits">-->
+                <!--    <input type="checkbox" id="mib-44">-->
+                <!--    <label class="item-info" for="mib-44"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">70 Br</div>-->
+                <!--    <div class="item-offer">Лидер продаж!</div>-->
+                <!--    <img src="assets/img/rings/ring-silver-diamond08.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond item-offer__hits">
+                    <input type="checkbox" id="mib-45">
+                    <label class="item-info" for="mib-45"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">85 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-silver-diamond09.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamond">-->
+                <!--    <input type="checkbox" id="mib-46">-->
+                <!--    <label class="item-info" for="mib-46"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">50 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-silver-diamond10.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Бриллиант</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__diamonds">
+                    <input type="checkbox" id="mib-47">
+                    <label class="item-info" for="mib-47"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">70 Br</div>
+                    <img src="assets/img/rings/ring-silver-diamond11.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Бриллиант</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+<!--silver-->
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-48">-->
+                <!--    <label class="item-info" for="mib-48"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">20 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 20%</div>-->
+                <!--    <img src="assets/img/rings/ring-silver01.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__sale">
+                    <input type="checkbox" id="mib-49">
+                    <label class="item-info" for="mib-49"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">15 Br</div>
+                    <div class="item-sale">Скидка: 15%</div>
+                    <img src="assets/img/rings/ring-silver02.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__sale">-->
+                <!--    <input type="checkbox" id="mib-50">-->
+                <!--    <label class="item-info" for="mib-50"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">15 Br</div>-->
+                <!--    <div class="item-sale">Скидка: 30%</div>-->
+                <!--    <img src="assets/img/rings/ring-silver03.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__new">
+                    <input type="checkbox" id="mib-51">
+                    <label class="item-info" for="mib-51"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">35 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-silver04.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__new">-->
+                <!--    <input type="checkbox" id="mib-52">-->
+                <!--    <label class="item-info" for="mib-52"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">30 Br</div>-->
+                <!--    <div class="item-new">Новинка</div>-->
+                <!--    <img src="assets/img/rings/ring-silver05.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__new">
+                    <input type="checkbox" id="mib-53">
+                    <label class="item-info" for="mib-53"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">35 Br</div>
+                    <div class="item-new">Новинка</div>
+                    <img src="assets/img/rings/ring-silver06.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none">-->
+                <!--    <input type="checkbox" id="mib-54">-->
+                <!--    <label class="item-info" for="mib-54"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">30 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-silver07.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none">
+                    <input type="checkbox" id="mib-55">
+                    <label class="item-info" for="mib-55"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">25 Br</div>
+                    <img src="assets/img/rings/ring-silver08.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none">-->
+                <!--    <input type="checkbox" id="mib-56">-->
+                <!--    <label class="item-info" for="mib-56"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">30 Br</div>-->
+                <!--    <img src="assets/img/rings/ring-silver09.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+                <div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__hits">
+                    <input type="checkbox" id="mib-57">
+                    <label class="item-info" for="mib-57"></label>
+                    <div class="item-name">Кольцо</div>
+                    <div class="item-price">35 Br</div>
+                    <div class="item-offer">Лидер продаж!</div>
+                    <img src="assets/img/rings/ring-silver10.jpg" title="" alt="" width="170px" height="170px">
+                    <div class="item-description">
+                        <span># 12345/A-01</span><br>
+                        <span>Металл: Серебро 925</span>
+                        <span>Вставка: Нет</span><br>
+                        <span>Вес изделия, г: 5</span>
+                    </div>
+                    <a href="error-page.html"></a>
+                </div>
+                <!--<div class="catalog-item-wrapper item-price__less-than-100 item-metal__silver item-insert__none item-offer__hits">-->
+                <!--    <input type="checkbox" id="mib-58">-->
+                <!--    <label class="item-info" for="mib-58"></label>-->
+                <!--    <div class="item-name">Кольцо</div>-->
+                <!--    <div class="item-price">45 Br</div>-->
+                <!--    <div class="item-offer">Лидер продаж!</div>-->
+                <!--    <img src="assets/img/rings/ring-silver11.jpg" title="" alt="" width="170px" height="170px">-->
+                <!--    <div class="item-description">-->
+                <!--        <span># 12345/A-01</span><br>-->
+                <!--        <span>Металл: Серебро 925</span>-->
+                <!--        <span>Вставка: Нет</span><br>-->
+                <!--        <span>Вес изделия, г: 5</span>-->
+                <!--    </div>-->
+                <!--    <a href="error-page.html"></a>-->
+                <!--</div>-->
+            </div>
+        </div>
+<!--java-script-->
+        <script>
+        var el = document.querySelector('.catalog-wrapper');
+
+        function updateItems() {
+            // Select all checked filters
+            var filters = document.querySelectorAll('.filter:checked');
+            // Select all item wrappers
+            var items = document.querySelectorAll('.catalog-item-wrapper');
+
+            // Show all if no filter selected
+            if (filters.length == 0) {
+                // Go over all items
+                for(var i = 0; i < items.length; i++) {
+                    // Remove .hide class to make item visible
+                    items[i].classList.remove('hide');
+                }
+                // Exit function to stop execution
+                return;
+            }
+
+            // Hide all items            
+            for(var i = 0; i < items.length; i++) {
+                // Add class .hide to delete item
+                items[i].classList.add('hide');
+            }
+
+            // Select filters with data-type = metal
+            var filterMetal = document.querySelectorAll('.filter:checked[data-type="metal"]');
+            // Select filters with data-type = price
+            var filterPrice = document.querySelectorAll('.filter:checked[data-type="price"]');
+            // Select filters with data-type = insert
+            var filterInsert = document.querySelectorAll('.filter:checked[data-type="insert"]');
+            // Select filters with data-type = offer
+            var filterOffer = document.querySelectorAll('.filter:checked[data-type="offer"]');
+
+            // Convert NodeList to array to use "filter" function later
+            var filteredList = Array.prototype.slice.call(items);
+
+            // For each item in items
+            for(var i = 0; i < items.length; i++) {
+                // Filters Metals if we have at least one filter
+                if (filterMetal.length != 0) {
+                    // Leave item in list if it matches at least one of the filters in filter type
+                    // For each item in filteredList apply a function
+                    filteredList = filteredList.filter(function(item) {
+                        // Do we have a match for any filter?
+                        var match = false;
+                        // Check for all filters in type Metal
+                        for (var j = 0; j < filterMetal.length; j++) {
+                            if (item.classList.contains(filterMetal[j].dataset.for)) {
+                                // Found a match!
+                                match = true;
+                            }
+                        }
+                        
+                        return match;
+                    });
+                }
+                
+                // Filters Inserts if we have at least one filter
+                if (filterInsert.length != 0) {
+                    filteredList = filteredList.filter(function(item) {
+                        var match = false;
+                        for (var j = 0; j < filterInsert.length; j++) {
+                            if (item.classList.contains(filterInsert[j].dataset.for)) {
+                                match = true;
+                            }
+                        }
+                        
+                        return match;
+                    });
+                }
+                
+                // Filter Price
+                if (filterPrice.length != 0) {
+                    filteredList = filteredList.filter(function(item) {
+                        var match = false;
+                        for (var j = 0; j < filterPrice.length; j++) {
+                            if (item.classList.contains(filterPrice[j].dataset.for)) {
+                                match = true;
+                            }
+                        }
+                        
+                        return match;
+                    });
+                }
+                                
+                // Filter Offer
+                if (filterOffer.length != 0) {
+                    filteredList = filteredList.filter(function(item) {
+                        var match = false;
+                        for (var j = 0; j < filterOffer.length; j++) {
+                            if (item.classList.contains(filterOffer[j].dataset.for)) {
+                                match = true;
+                            }
+                        }
+                        
+                        return match;
+                    });
+                }
+            }
+
+            // Show filtered items
+            for(var i = 0; i < filteredList.length; i++) {
+                filteredList[i].classList.remove('hide');
+            }
+        }
+        el.addEventListener('change', function(event) {
+            if (event.target.classList.contains('filter')) {
+                updateItems();
+            }
+        });
+    </script>
+<!--footer-->
+        <div class="footer">
+<!--footer-wrapper-->
+            <div class="footer-menu-wrapper">
+                <!--footer-buttons-->
+                <input type="checkbox" id="footer-about-button">
+                <input type="checkbox" id="footer-services-button">
+                <input type="checkbox" id="footer-catalog-button">
+                <input type="checkbox" id="footer-social-button">
+<!--footer-logo-->
+                <div class="footer-logo">
+                    <div class="footer-logo-area"><a href="index.html"><img src="assets/img/logo.jpg"></a></div>
+                    <a href="contacts.html">Контакты</a>
+                    <ul>
+                        <li class="footer-text">+375 17 233 16 20</li>
+                        <li class="footer-text">+375 29 655 82 90</li>
+                        <li class="footer-text">+375 29 717 20 36</li>
+                    </ul>
+                </div>
+<!--footer-about-->
+                <div class="footer-about">
+                    <label for="footer-about-button">О компании</label>
+                    <ul class="to-hide-list">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="error-page.html">Вакансии</a></li>
+                        <li><a href="error-page.html">Карта сайта</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="error-page.html">Новости</a></li>
+                    </ul>
+                </div>
+<!--footer-services-->
+                <div class="footer-services">
+                    <label for="footer-services-button">Сервисы</label>
+                    <ul class="to-hide-list">
+                        <li><a href="error-page.html">Доставка</a></li>
+                        <li><a href="error-page.html">Гарантия</a></li>
+                        <li><a href="error-page.html">Мастерская</a></li>
+                        <li><a href="error-page.html">Рассрочка</a></li>
+                    </ul>
+                </div>
+<!--footer-catalog-->
+                <div class="footer-catalog">
+                    <label for="footer-catalog-button">Каталог</label>
+                    <ul class="to-hide-list">
+                        
+                        <li><a href="rings.html">Обручальные кольца</a></li>
+                        <li><a href="ring2.html">Подарочные кольца</a></li>
+                        
+                    </ul>
+                </div>
+<!--footer-social-->
+                <div class="footer-social">
+                    <label for="footer-social-button">Мы в социальных сетях</label>
+                    <ul class="to-hide-list">
+                        <li><a href="error-page.html"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-odnoklassniki-square"></i></a></li>
+                        <li><a href="error-page.html"><i class="fa fa-vk"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
